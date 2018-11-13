@@ -3,9 +3,8 @@
  */
 
 function hello() {
-
-  // WRITE YOUR EXERCISE 1 CODE HERE
-
+  var div = document.getElementById('output1');
+  div.innerHTML="Hello, AP Computer Science Principles!";
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
@@ -15,7 +14,7 @@ function hello() {
  * Hello, Again. 3 points.
  */
 
-function helloAgain() {
+ function helloAgain() {
 
   //////////// DO NOT MODIFY
   let name; // DO NOT MODIFY
@@ -24,7 +23,9 @@ function helloAgain() {
   // Use the name variable declared above to store the user's response. You
   // do not need to re-declare it, only assign it a value.
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
+  name = prompt("Please Enter Your First Name");
+  let div = document.getElementById('output2');
+  div.innerHTML="Hello, " + name + "!"
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -44,7 +45,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+  cels=
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
