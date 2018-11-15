@@ -45,7 +45,8 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  cels=
+let fahrenheit=((cels*9/5)+32).toFixed(2);
+let div = document.getElementById('output3');
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
