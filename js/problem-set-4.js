@@ -47,6 +47,7 @@ function celsius() {
 
 let fahrenheit=((cels*9/5)+32).toFixed(2);
 let div = document.getElementById('output3');
+div.innerHTML=`${cels} degrees Celsius equals ${fahrenheit} degrees Fahrenheit.`;
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -66,7 +67,10 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+  let celcius=((fahr-32)*5/9).toFixed(2);
+  let div = document.getElementById('output4');
+  div.innerHTML=`${fahr} degrees Fahrenheit equals ${celcius} degrees Celsius.`;
+
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -90,7 +94,14 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+let miles=inches/63360;
+let yards=inches/36;
+let feet=inches/12;
+let div = document.getElementById(`output5`)
+div.innerHTML= Miles:`${miles}`;
+Yards:` ${yards}`;
+Feet:`${feet}`;
+Inches: `${inches}`;
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
