@@ -94,14 +94,16 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-let miles=inches/63360;
-let yards=inches/36;
-let feet=inches/12;
-let div = document.getElementById(`output5`)
-div.innerHTML= Miles:`${miles}`;
-Yards:` ${yards}`;
-Feet:`${feet}`;
-Inches: `${inches}`;
+let miles=Math.floor(inches/63360);
+inches=inches%63360;
+let yards=Math.floor(inches/36);
+inches=inches%36;
+let feet=Math.floor(inches/12);
+inches=inches%12;
+let bInches=Math.floor(inches/1);
+inches=inches%1;
+document.getElementById(`output5`).innerHTML =
+`Miles: ${miles}<br/>Yards: ${yards}<br/>Feet: ${feet}<br/>Inches: ${bInches}`;
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
@@ -125,7 +127,15 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 6 CODE HERE
+  let kilometers=Math.floor(centimeters/100000);
+  centimeters=centimeters%100000;
+  let meters=Math.floor(centimeters/100);
+  centimeters=centimeters%100;
+  let bcentimeters=Math.floor(centimeters/1);
+  centimeters=centimeters%1;
+  document.getElementById(`output6`).innerHTML =
+  `Kilometers: ${kilometers}<br/>Meters: ${meters}<br/>Centimeters: ${bcentimeters}`;
+
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
@@ -149,7 +159,19 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  let gallons=Math.floor(fluidOunces/128);
+  fluidOunces=fluidOunces%128;
+  let quarts=Math.floor(fluidOunces/32);
+  fluidOunces=fluidOunces%32;
+  let pints=Math.floor(fluidOunces/12);
+  fluidOunces=fluidOunces%16;
+  let cups=Math.floor(fluidOunces/8.115);
+  fluidOunces=fluidOunces%8.115;
+  let bfluidounces=Math.floor(fluidOunces/1);
+  fluidOunces=fluidOunces%1;
+  document.getElementById(`output7`).innerHTML =
+  `Gallons: ${gallons}<br/>Quarts: ${quarts}<br/>Pints: ${pints}<br/>Cups: ${cups}<br/>Fluid Ounces: ${bfluidounces}`;
+
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
