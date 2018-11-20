@@ -134,8 +134,7 @@ function centimeters() {
   centimeters=centimeters%100;
   let bcentimeters=Math.floor(centimeters/1);
   centimeters=centimeters%1;
-  document.getElementById(`output6`)
-  .innerHTML =
+  document.getElementById(`output6`).innerHTML =
   `Kilometers: ${kilometers}<br/>Meters: ${meters}<br/>Centimeters: ${bcentimeters}`;
 
 
@@ -165,14 +164,13 @@ function fluidOunces() {
   fluidOunces=fluidOunces%128;
   let quarts=Math.floor(fluidOunces/32);
   fluidOunces=fluidOunces%32;
-  let pints=Math.floor(fluidOunces/16);
+  let pints=Math.floor(fluidOunces/12);
   fluidOunces=fluidOunces%16;
-  let cups=Math.floor(fluidOunces/8);
-  fluidOunces=fluidOunces%8;
+  let cups=Math.floor(fluidOunces/8.115);
+  fluidOunces=fluidOunces%8.115;
   let bfluidounces=Math.floor(fluidOunces/1);
   fluidOunces=fluidOunces%1;
-  document.getElementById(`output7`)
-  .innerHTML =
+  document.getElementById(`output7`).innerHTML =
   `Gallons: ${gallons}<br/>Quarts: ${quarts}<br/>Pints: ${pints}<br/>Cups: ${cups}<br/>Fluid Ounces: ${bfluidounces}`;
 
 
